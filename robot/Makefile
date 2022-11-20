@@ -7,4 +7,4 @@ mongodb:
 
 catalogue:
 
-	 compoenents/catalogue.sh
+	bash components/catalogue.sh
