@@ -1,5 +1,12 @@
 #!/bin/bash
+set-e
 
+USERID=$(id-u)
+
+if [$USERid=(id-u)]
+echo-e"\e "\[31m you mustrun this script as a root user or with sudo priv\e[0m"
+exit 1 
+fi
 yum install nginx -y
 
 curl -s -L -o /tmp/frontend.zip "https://github.com/stans-robot-project/frontend/archive/main.zip"
